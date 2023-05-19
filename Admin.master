@@ -1,0 +1,139 @@
+﻿<%@ Master Language="VB" CodeFile="Admin.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 100%;
+        }
+        .auto-style2
+        {
+            height: 20px;
+        }
+        .auto-style3
+        {
+            text-align: center;
+        }
+        .auto-style4
+        {
+            width: 83px;
+            height: 27px;
+        }
+        .auto-style5
+        {
+            width: 91px;
+            height: 27px;
+        }
+        .auto-style6
+        {
+            width: 89px;
+            height: 27px;
+        }
+        .auto-style7
+        {
+            width: 90px;
+            height: 27px;
+        }
+        .auto-style8
+        {
+            width: 86px;
+            height: 27px;
+        }
+        .auto-style9
+        {
+            width: 77px;
+            height: 27px;
+        }
+        .auto-style11
+        {
+            height: 27px;
+            width: 96px;
+        }
+        .auto-style12
+        {
+            height: 27px;
+            width: 107px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td style="text-align: center">
+                   &nbsp;&nbsp;
+                   <asp:Label ID="Label1" runat="server" Text="Welcome to HealthCare System" 
+                        Font-Bold="True" Font-Names="Times New Roman" 
+                        style="font-style: italic; font-size: larger"></asp:Label> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style4">
+                                <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" 
+                                    Font-Names="Times New Roman" NavigateUrl="~/AdminHome.aspx">Home</asp:HyperLink>
+                            </td>
+                            <td class="auto-style5">
+                                <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" 
+                                    Font-Names="Times New Roman" NavigateUrl="~/Page1.aspx">Page 1</asp:HyperLink>
+                            </td>
+                            <td class="auto-style6">
+                                <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" 
+                                    Font-Names="Times New Roman" NavigateUrl="~/Page2.aspx">Page 2</asp:HyperLink>
+                            </td>
+                            <td class="auto-style7">
+                                <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" 
+                                    Font-Names="Times New Roman" NavigateUrl="~/Page3.aspx">Page 3</asp:HyperLink>
+                            </td>
+                            <td class="auto-style8">
+                                <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" 
+                                    Font-Names="Times New Roman" NavigateUrl="~/Page4.aspx">Page 4</asp:HyperLink>
+                            </td>
+                            <td class="auto-style9">
+                                <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" 
+                                    Font-Names="Times New Roman" NavigateUrl="~/Page5.aspx" 
+                                    style="text-align: center">Page 5</asp:HyperLink>
+                            </td>
+                            <td class="auto-style12">
+                                <asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" 
+                                    Font-Names="Times New Roman" NavigateUrl="~/Signin.aspx">Login</asp:HyperLink>
+                            </td>
+                            <td class="auto-style11"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3"><strong style="text-align: center">&nbsp; All CopyRights 
+                    Reserved</strong></td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>
