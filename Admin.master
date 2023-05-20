@@ -95,17 +95,15 @@
                                     Font-Names="Times New Roman" NavigateUrl="~/Page3.aspx">Page 3</asp:HyperLink>
                             </td>
                             <td class="auto-style8">
-                                <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" 
-                                    Font-Names="Times New Roman" NavigateUrl="~/Page4.aspx">Page 4</asp:HyperLink>
-                            </td>
-                            <td class="auto-style9">
                                 <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" 
                                     Font-Names="Times New Roman" NavigateUrl="~/Page5.aspx" 
-                                    style="text-align: center">Page 5</asp:HyperLink>
+                                    style="text-align: center">Page 4</asp:HyperLink>
                             </td>
+                            <td class="auto-style9">
+                                &nbsp;</td>
                             <td class="auto-style12">
                                 <asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" 
-                                    Font-Names="Times New Roman" NavigateUrl="~/Signin.aspx">Login</asp:HyperLink>
+                                    Font-Names="Times New Roman" NavigateUrl="~/Signin.aspx">Logout</asp:HyperLink>
                             </td>
                             <td class="auto-style11"></td>
                         </tr>
@@ -116,11 +114,16 @@
                 <td class="auto-style2">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
+            <asp:Image ID="Image1" runat="server" Height="290px" style="margin-left: 318px" 
+                Width="752px" />
+        
         </asp:ContentPlaceHolder>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3"><strong style="text-align: center">&nbsp; All CopyRights 
+                <td class="auto-style3"><strong style="text-align: center">&nbsp; 
+                    <br />
+                    All CopyRights 
                     Reserved</strong></td>
             </tr>
         </table>

@@ -92,8 +92,8 @@
 <asp:Label ID="Label3" runat="server" Text="Medicine"></asp:Label>
 <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" 
     DataKeyNames="Medicine_Code" DataSourceID="SqlDataSource10" 
-    style="text-align: center; margin-left: 359px" Width="708px" CellPadding="4" 
-        ForeColor="#333333" GridLines="None">
+    style="text-align: center; margin-left: 359px" Width="708px" 
+    CellPadding="4" ForeColor="#333333" GridLines="None">
     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
     <Columns>
         <asp:BoundField DataField="Medicine_Code" HeaderText="Medicine_Code" 
