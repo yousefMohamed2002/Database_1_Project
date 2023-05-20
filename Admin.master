@@ -100,7 +100,7 @@
                                     style="text-align: center">Page 4</asp:HyperLink>
                             </td>
                             <td class="auto-style9">
-                                &nbsp;</td>
+                                </td>
                             <td class="auto-style12">
                                 <asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" 
                                     Font-Names="Times New Roman" NavigateUrl="~/Signin.aspx">Logout</asp:HyperLink>
@@ -115,7 +115,7 @@
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
             <asp:Image ID="Image1" runat="server" Height="290px" style="margin-left: 318px" 
-                Width="752px" />
+                Width="752px" DescriptionUrl="~/OIP.jpeg" />
         
         </asp:ContentPlaceHolder>
                 </td>

@@ -9,7 +9,7 @@
     {
         if ((txtUsername.Text == "yousefElkholy" && txtPassword.Text == "yousef") || (txtUsername.Text == "yousefTamer" && txtPassword.Text == "yousef") ||
             (txtUsername.Text == "Marko" && txtPassword.Text == "Marko") ||
-            (txtUsername.Text == "Amgad" && txtPassword.Text == "Amgad") || 
+            (txtUsername.Text == "Amged" && txtPassword.Text == "Amged") || 
             (txtUsername.Text == "Marwan" && txtPassword.Text == "Marwan"))
                 Response.Redirect("~/AdminHome.aspx");//-----------VIP
          else

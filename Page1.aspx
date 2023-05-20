@@ -7,7 +7,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label4" runat="server" Text="Doctor"></asp:Label>
     <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="D_ID" DataSourceID="SqlDataSource6" style="margin-left: 448px" 
+        DataKeyNames="D_ID" DataSourceID="SqlDataSource1" style="margin-left: 448px" 
         Width="546px" CellPadding="4" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
@@ -34,19 +34,16 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource6" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" 
-        SelectCommand="SELECT D_ID, F_Name, L_Name, DOB, Specialized, Supervise_D_ID FROM Doctor WHERE (D_ID BETWEEN 1 AND 10) ORDER BY F_Name, L_Name">
-    </asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" 
-        SelectCommand="SELECT * FROM [Doctor]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" 
+            SelectCommand="SELECT D_ID, F_Name, L_Name, DOB, Specialized, Supervise_D_ID FROM Doctor WHERE (D_ID BETWEEN 1 AND 7) ORDER BY F_Name, L_Name">
+        </asp:SqlDataSource>
 </p>
 <p>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label2" runat="server" Text="Receptionist"></asp:Label>
     <asp:GridView ID="GridView1" runat="server" Width="553px" 
-        AutoGenerateColumns="False" DataKeyNames="R_ID" DataSourceID="SqlDataSource9" 
+        AutoGenerateColumns="False" DataKeyNames="R_ID" DataSourceID="SqlDataSource2" 
         style="margin-left: 441px" CellPadding="4" ForeColor="#333333" 
         GridLines="None">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
@@ -74,19 +71,10 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource9" runat="server" 
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
         ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" 
-        SelectCommand="SELECT R_ID, F_Name, L_Name, DOB, Gender, position FROM Receptionist WHERE (R_ID BETWEEN 1 AND 5) ORDER BY F_Name, L_Name DESC">
+        SelectCommand="SELECT R_ID, F_Name, L_Name, DOB, Gender, position FROM Receptionist WHERE (R_ID BETWEEN 1 AND 5) ORDER BY F_Name, L_Name">
     </asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource7" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" 
-        SelectCommand="SELECT D_ID, F_Name, L_Name, DOB, Specialized, Supervise_D_ID FROM Doctor WHERE (D_ID BETWEEN 1 AND 5) ORDER BY F_Name, L_Name DESC">
-    </asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource4" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:projectConnectionString2 %>" 
-        SelectCommand="SELECT * FROM [Receptionist]"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource3" runat="server"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
 </p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <asp:Label ID="Label3" runat="server" Text="Medicine"></asp:Label>

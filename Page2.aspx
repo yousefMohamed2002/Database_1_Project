@@ -7,15 +7,15 @@
 <br />
 <asp:Label ID="Label2" runat="server" Text="Max Price Of Medicine "></asp:Label>
 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-    CellPadding="4" DataSourceID="SqlDataSource4" ForeColor="#333333" 
+    CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="#333333" 
     GridLines="None" style="margin-left: 326px" Width="487px">
     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
     <Columns>
-        <asp:BoundField DataField="MIN_Number_Of_Staff" 
-            HeaderText="MIN_Number_Of_Staff" ReadOnly="True" 
-            SortExpression="MIN_Number_Of_Staff" />
-        <asp:BoundField DataField="H_Name" HeaderText="H_Name" 
-            SortExpression="H_Name" />
+        <asp:BoundField DataField="Max_Price" 
+            HeaderText="Max_Price" ReadOnly="True" 
+            SortExpression="Max_Price" />
+        <asp:BoundField DataField="M_Name" HeaderText="M_Name" 
+            SortExpression="M_Name" />
     </Columns>
     <EditRowStyle BackColor="#999999" />
     <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -28,6 +28,10 @@
     <SortedDescendingCellStyle BackColor="#FFFDF8" />
     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
 </asp:GridView>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" 
+        SelectCommand="SELECT MAX(Price) AS Max_Price, M_Name FROM Medicine GROUP BY M_Name HAVING (MAX(Price) &gt; 5) ORDER BY M_Name">
+    </asp:SqlDataSource>
 <asp:SqlDataSource ID="SqlDataSource4" runat="server" 
     ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" SelectCommand=" Select Max(StaffNo)  as MIN_Number_Of_Staff, H_Name from Health_Office
   GROUP BY H_Name
